@@ -7,7 +7,7 @@ import mathTool from "../markdown/util/mathTool.md";
 import objectTool from "../markdown/util/objectTool.md";
 import stringTool from "../markdown/util/stringTool.md";
 import validate from "../markdown/util/validate.md";
-
+import generalTool from "../markdown/util/generalTool.md";
 
 
 
@@ -32,6 +32,8 @@ let comps = {
             {name:'objectTool',source:objectTool,title:"objectTool"},
             {name:'stringTool',source:stringTool,title:"stringTool"},
             {name:'validate',source:validate,title:"validate"},
+            {name:'generalTool',source:generalTool,title:"generalTool"},
+            
 
         ]
 
