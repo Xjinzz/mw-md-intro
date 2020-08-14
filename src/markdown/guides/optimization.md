@@ -1,5 +1,8 @@
 # 前端优化
 <!-- 缓存模块优化开始 -->
+## 总览
+![](../../static/images/1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/200))
+<img src="../../static/images/1.png" alt="图片替换文本" width="500" height="313" align="bottom" />
 ## 缓存
 ### 本地数据存储
  本地存储分为**cookie**(兼容性好)、**localStorage**(存在时间久、存储空间大)、**sessionStorage**（关闭页面即消失)、**indexedDB**(一种类似SQL数据库结构化数据存储机制)，对于一些特殊的、轻量级的业务数据，可以考虑使用本地存储作为缓存

@@ -9,8 +9,9 @@ import stringTool from "../markdown/util/stringTool.md";
 import validate from "../markdown/util/validate.md";
 import generalTool from "../markdown/util/generalTool.md";
 
-
-
+import searchPage from '../markdown/specs/search.md'
+import viewPage from '../markdown/specs/view.md'
+import specPage from '../markdown/specs/spec.md'
 
 
 
@@ -33,11 +34,17 @@ let comps = {
             {name:'stringTool',source:stringTool,title:"stringTool"},
             {name:'validate',source:validate,title:"validate"},
             {name:'generalTool',source:generalTool,title:"generalTool"},
-            
-
         ]
-
+    },
+    spec: {
+        title: '人大项目规范',
+        childs: [
+            {name: 'searchPage', source: searchPage, title: 'search页面开发示例'},
+            {name: 'viewPage', source: viewPage, title: 'view页面开发示例'},
+            {name: 'specPage', source: specPage, title: 'vue开发规范'},
+        ]
     }
+
 }
 
 export default comps;
