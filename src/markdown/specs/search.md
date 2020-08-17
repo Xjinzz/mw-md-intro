@@ -72,11 +72,6 @@ const searchModal = {
   userName: '',
   userCode: ''
 }
-function paramsProxy (fn, ...params) {
-  return function () {
-    fn.apply(fn, params)
-  }
-}
 export default {
   components: {
     IopDataTable,
@@ -133,10 +128,9 @@ export default {
   methods: {
     onAction ({ name = '', data = {} }) {
       const actionMap = {
-        onCreate: this.doCreate,
-        // paramsProxy后期会抽出到utils
-        onView: paramsProxy(this.doView, data.original),
-        onEdit: paramsProxy(this.doEdit, data.original)
+        onCreate: this.doCreate.bind(this),
+        onView: this.doView.bind(this, data.original),
+        onEdit: this.doEdit.bind(this, data.original)
       }
       actionMap.hasOwnProperty(name) && actionMap[name]()
     },
