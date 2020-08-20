@@ -1,4 +1,4 @@
-# date
+# Log
 ### 方法合集
 #### error、warning、success、info、tips、confirm
 ### error
